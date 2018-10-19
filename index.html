@@ -2,21 +2,21 @@
 <html lang="en">
 
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<!-- <meta http-equiv="refresh" content="100"> -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Lorem ipsum dolor.">
-<meta name="keywords" content="Lorem ipsum dolor sit amet.">
-<meta name="author" content="Jonatan Lindahl">
-<title>Hello</title>
-<link rel="shortcut icon" href="https://robohash.org/hello" />
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="Basic-Header.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- <meta http-equiv="refresh" content="100"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lorem ipsum dolor.">
+  <meta name="keywords" content="Lorem ipsum dolor sit amet.">
+  <meta name="author" content="Jonatan Lindahl">
+  <title>Hello</title>
+  <link rel="shortcut icon" href="https://robohash.org/hello" />
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="Basic-Header.css">
 
-<style>
+  <style>
 
-@font-face {
+    @font-face {
     font-family: Zwizz-bold;
     src: url('fonts/zwizz/Zwizz-Bold.woff');
 }
@@ -180,9 +180,13 @@ h5 {
 }
 
 .height{
+  box-sizing: border-box;
   height: 300px;
   border:solid 1px #fff;
 }
+*:focus{outline:0;}
+
+.btn:focus{outline:none;}
 
 </style>
 
@@ -190,225 +194,244 @@ h5 {
 
 <body>
 
-<div>
-  <nav class="navbar navbar-default navigation-clean-button">
-    <div class="container">
-      <div class="navbar-header">
-        <a class="skip-main" href="#main">Skip to main content</a>
-        <a class="navbar-brand" href="#">Company Name</a>
-        <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+  <div>
+    <nav class="navbar navbar-default navigation-clean-button">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="skip-main" href="#main">Skip to main content</a>
+          <a class="navbar-brand" href="#">Company Name</a>
+          <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+        </div>
+        <div class="collapse navbar-collapse" id="navcol-1">
+          <ul class="nav navbar-nav">
+            <li class="active" role="presentation"><a href="#">First Item</a></li>
+            <li role="presentation"><a href="#">Second Item</a></li>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li role="presentation"><a href="#">First Item</a></li>
+                <li role="presentation"><a href="#">Second Item</a></li>
+                <li role="presentation"><a href="#">Third Item</a></li>
+              </ul>
+            </li>
+          </ul>
+          <p class="navbar-text navbar-right actions"><a class="navbar-link login" href="#">Log In</a> <a class="btn btn-default action-button" role="button" href="#">Sign Up</a></p>
+        </div>
       </div>
-      <div class="collapse navbar-collapse" id="navcol-1">
-        <ul class="nav navbar-nav">
-          <li class="active" role="presentation"><a href="#">First Item</a></li>
-          <li role="presentation"><a href="#">Second Item</a></li>
-          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">Dropdown <span class="caret"></span></a>
-            <ul class="dropdown-menu" role="menu">
-              <li role="presentation"><a href="#">First Item</a></li>
-              <li role="presentation"><a href="#">Second Item</a></li>
-              <li role="presentation"><a href="#">Third Item</a></li>
-            </ul>
-          </li>
-        </ul>
-        <p class="navbar-text navbar-right actions"><a class="navbar-link login" href="#">Log In</a> <a class="btn btn-default action-button" role="button" href="#">Sign Up</a></p>
-      </div>
-    </div>
-  </nav>
-</div>
-
-<div id="main" tabindex="-1" class="container main-container">
-
-  <div class="jumbotron">
-    <h1 class="display-4">Lorem ipsum dolor sit.</h1>
-    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-    <hr class="my-4">
-    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    </nav>
   </div>
-  <div class="container">
-    <div class="row">
-      <h1>Hello world</h1>
-      <h2>Hello world</h2>
-      <h3>Hello world</h3>
-      <h4>Hello world</h4>
-      <h5>Hello world</h5>
-      <h6>Hello world</h6>
 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, et.</p>
+  <div id="main" tabindex="-1" class="container main-container">
 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos animi temporibus odit tenetur optio rerum iusto at ratione, accusamus deserunt numquam! Suscipit perspiciatis, voluptatem dolor culpa mollitia asperiores rem at?</p>
-
-      <details>
-        <summary>Copyright 1999-2014.</summary>
-        <p> - by Refsnes Data. All Rights Reserved.</p>
-        <p>All content and graphics on this web site are the property of the company Refsnes Data.</p>
-      </details>
+    <div class="jumbotron">
+      <h1 class="display-4">Lorem ipsum dolor sit.</h1>
+      <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+      <hr class="my-4">
+      <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+      <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
     </div>
-    <div class="row">
-      <button type="button" class="btn btn-primary">Primary</button>
-      <button type="button" class="btn btn-secondary">Secondary</button>
-      <button type="button" class="btn btn-success">Success</button>
-      <button type="button" class="btn btn-danger">Danger</button>
-      <button type="button" class="btn btn-warning">Warning</button>
-      <button type="button" class="btn btn-info">Info</button>
-      <button type="button" class="btn btn-light">Light</button>
-      <button type="button" class="btn btn-dark">Dark</button>
+    <div class="container">
+      <div class="row">
+        <h1>Hello world</h1>
+        <h2>Hello world</h2>
+        <h3>Hello world</h3>
+        <h4>Hello world</h4>
+        <h5>Hello world</h5>
+        <h6>Hello world</h6>
 
-      <button type="button" class="btn btn-link">Link</button>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, et.</p>
 
-      <button type="button" class="btn btn-primary btn-lg">Large button</button>
-      <button type="button" class="btn btn-secondary btn-lg">Large button</button>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos animi temporibus odit tenetur optio rerum iusto at ratione, accusamus deserunt numquam! Suscipit perspiciatis, voluptatem dolor culpa mollitia asperiores rem at?</p>
 
-      <button type="button" class="btn btn-primary btn-sm">Small button</button>
-      <button type="button" class="btn btn-secondary btn-sm">Small button</button>
-    </div>
-    <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
-    <button type="button" class="btn btn-secondary btn-lg btn-block">Block level button</button>
-
-    <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Primary link</a>
-    <a href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Link</a>
-
-    <form>
-      <div class="form-group row">
-        <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
-        <div class="col-sm-10">
-          <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-        </div>
+        <details>
+          <summary>Copyright 1999-2014.</summary>
+          <p> - by Refsnes Data. All Rights Reserved.</p>
+          <p>All content and graphics on this web site are the property of the company Refsnes Data.</p>
+        </details>
       </div>
-      <div class="form-group row">
-        <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
-        <div class="col-sm-10">
-          <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
-        </div>
+      <div class="row">
+        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-secondary">Secondary</button>
+        <button type="button" class="btn btn-success">Success</button>
+        <button type="button" class="btn btn-danger">Danger</button>
+        <button type="button" class="btn btn-warning">Warning</button>
+        <button type="button" class="btn btn-info">Info</button>
+        <button type="button" class="btn btn-light">Light</button>
+        <button type="button" class="btn btn-dark">Dark</button>
+
+        <button type="button" class="btn btn-link">Link</button>
+
+        <button type="button" class="btn btn-primary btn-lg">Large button</button>
+        <button type="button" class="btn btn-secondary btn-lg">Large button</button>
+
+        <button type="button" class="btn btn-primary btn-sm">Small button</button>
+        <button type="button" class="btn btn-secondary btn-sm">Small button</button>
       </div>
-      <fieldset class="form-group">
-        <div class="row">
-          <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
+      <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+      <button type="button" class="btn btn-secondary btn-lg btn-block">Block level button</button>
+
+      <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Primary link</a>
+      <a href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Link</a>
+
+      <form>
+        <div class="form-group row">
+          <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+          <div class="col-sm-10">
+            <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+          </div>
+        </div>
+        <fieldset class="form-group">
+          <div class="row">
+            <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
+            <div class="col-sm-10">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                <label class="form-check-label" for="gridRadios1">
+                  First radio
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                <label class="form-check-label" for="gridRadios2">
+                  Second radio
+                </label>
+              </div>
+              <div class="form-check disabled">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled>
+                <label class="form-check-label" for="gridRadios3">
+                  Third disabled radio
+                </label>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+        <div class="form-group row">
+          <div class="col-sm-2">Checkbox</div>
           <div class="col-sm-10">
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-              <label class="form-check-label" for="gridRadios1">
-              First radio
-            </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-              <label class="form-check-label" for="gridRadios2">
-              Second radio
-            </label>
-            </div>
-            <div class="form-check disabled">
-              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled>
-              <label class="form-check-label" for="gridRadios3">
-              Third disabled radio
-            </label>
+              <input class="form-check-input" type="checkbox" id="gridCheck1">
+              <label class="form-check-label" for="gridCheck1">
+                Example checkbox
+              </label>
             </div>
           </div>
         </div>
-      </fieldset>
-      <div class="form-group row">
-        <div class="col-sm-2">Checkbox</div>
-        <div class="col-sm-10">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="gridCheck1">
-            <label class="form-check-label" for="gridCheck1">
-            Example checkbox
-          </label>
+        <div class="form-group row">
+          <div class="col-sm-10">
+            <button type="submit" class="btn btn-primary">Sign in</button>
           </div>
         </div>
-      </div>
-      <div class="form-group row">
-        <div class="col-sm-10">
-          <button type="submit" class="btn btn-primary">Sign in</button>
-        </div>
-      </div>
-    </form>
+      </form>
 
-    <div class="row">
-      <div class="col-sm-4">
-        <div class="card">
-          <img class="card-img-top" src="https://picsum.photos/300/250?random" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="card">
+            <img class="card-img-top" src="https://picsum.photos/300/250?random" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <img class="card-img-top" src="https://picsum.photos/300/250?gravity=east" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <img class="card-img-top" src="https://picsum.photos/300/250?gravity=west" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-sm-4">
-        <div class="card">
-          <img class="card-img-top" src="https://picsum.photos/300/250?gravity=east" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="card">
+            <img class="card-img-top" src="https://picsum.photos/300/250?center" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <img class="card-img-top" src="https://picsum.photos/300/250?gravity=north" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <img class="card-img-top" src="https://picsum.photos/300/250?gravity=south" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-sm-4">
-        <div class="card">
-          <img class="card-img-top" src="https://picsum.photos/300/250?gravity=west" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
+
+      <div class="progress">
+        <div class="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+          <span class="sr-only">60% Complete</span>
         </div>
       </div>
     </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <ul>
+            <li>Lorem ipsum dolor sit.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur.</li>
+            <li>Lorem ipsum dolor sit.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur.</li>
+          </ul>
+        </div>
+        <div class="height col-sm-6"></div>
+      </div>
 
-    <div class="row">
-      <div class="col-sm-4">
-        <div class="card">
-          <img class="card-img-top" src="https://picsum.photos/300/250?center" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="card">
-          <img class="card-img-top" src="https://picsum.photos/300/250?gravity=north" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="card">
-          <img class="card-img-top" src="https://picsum.photos/300/250?gravity=south" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
+      <div class="row">
+        <div class="col height"></div>
+        <div class="col height"></div>
       </div>
     </div>
 
-    <div class="progress">
-      <div class="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-        <span class="sr-only">60% Complete</span>
-      </div>
-    </div>
   </div>
 
-    <div class="row">
-      <div class="height col-sm-6"></div>
-      <div class="height col-sm-6"></div>
-    </div>
-
-</div>
 
 
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="js/bootstrap.min.js"></script>
 
 </body>
 
