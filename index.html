@@ -11,8 +11,8 @@
   <meta name="author" content="Jonatan Lindahl">
   <title>Hello</title>
   <link rel="stylesheet" href="css/font-awesome.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
-<link rel="stylesheet" href="css/compact-gallery.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
+  <link rel="stylesheet" href="css/compact-gallery.css">
   <link rel="shortcut icon" href="https://robohash.org/hello" />
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="Basic-Header.css">
@@ -213,7 +213,7 @@ h5 {
 
 <body>
 
-  <div>
+  <div id="top-nav">
     <nav class="navbar navbar-default navigation-clean-button">
       <div class="container">
         <div class="navbar-header">
@@ -505,7 +505,7 @@ h5 {
                 <div class="col-sm-2">
                     <h5>Get started</h5>
                     <ul>
-                        <li><a href="#">Home</a></li>
+                        <li><a href="#home">Home</a></li>
                         <li><a href="#">Sign up</a></li>
                         <li><a href="#">Downloads</a></li>
                     </ul>
@@ -594,11 +594,28 @@ h5 {
  var links = document.links;
  console.log("Links: " + links.item(20));
 
- var hash = window.location.hash.substr(1);
- console.log("Hash: " + hash);
+ var href= document.links[2].href;
+ console.log("Href: " + href);
 
   var ref = document.referrer;
   console.log(ref);
+
+  var lastScrollTop = 0;
+  // element should be replaced with the actual target element on which you have applied scroll, use window in case of no target element.
+  document.addEventListener("scroll", function(){ // or window.addEventListener("scroll"....
+     var st = window.pageYOffset || document.documentElement.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
+     if (st > lastScrollTop){
+        // downscroll code
+        console.log('down');
+        document.getElementById('top-nav').style.display = 'none';
+     } else {
+        // upscroll code
+        console.log("up");
+        document.getElementById('top-nav').style.display = 'block';
+     }
+     lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
+  }, false);
+
 
   </script>
 
