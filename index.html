@@ -591,6 +591,12 @@ h5 {
   var hist = history.length;
   console.log(hist);
 
+ var links = document.links;
+ console.log("Links: " + links.item(20));
+
+ var hash = window.location.hash.substr(1);
+ console.log("Hash: " + hash);
+
   var ref = document.referrer;
   console.log(ref);
 
